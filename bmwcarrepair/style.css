@@ -1,0 +1,422 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f5f5f5;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+nav .container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .container .active {
+  color: #e74c3c;
+}
+
+nav .container a {
+  padding: 0 8px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+nav .container a:hover {
+  color: #e74c3c;
+  transition: 0.6s;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("img/background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #0e0d0d;
+  opacity: 0.5;
+}
+
+.hero .container {
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero .container h1 {
+  margin: -10px 0 0 0;
+  position: absolute;
+  color: #fff;
+  font-size: 34.5px;
+  font-weight: 400;
+}
+
+.services {
+  margin: 180px 0;
+  background: url("img/services.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services h1 {
+  margin: 60px 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.services span {
+  color: #e74c3c;
+}
+
+.services .container {
+  width: 100%;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.services .container .service-box {
+  width: 100%;
+  max-width: 500px;
+}
+
+.services .container .service-box p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.services .container .service-box i {
+  margin: 0 15px;
+  color: #e74c3c;
+  font-size: 25px;
+}
+
+.testimonials {
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .container {
+  width: 100%;
+  max-width: 1400px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.testimonials .container .card {
+  margin: 60px 20px;
+  padding: 70px 40px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials .container .card:hover {
+  background: #e74c3c;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.testimonials .container .card .imgCard {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonials .container .card .imgCard img {
+  border-radius: 50%;
+}
+
+.testimonials .container .card h4 {
+  margin: 10px 0;
+  color: #e74c3c;
+  font-size: 25px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.testimonials .container .card p {
+  margin: 0;
+  color: #10161a;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.testimonials .container .card i {
+  margin-top: 25px;
+  color: #e74c3c;
+  font-size: 20px;
+}
+
+.testimonials .container .card:hover h4, .testimonials .container .card:hover p, .testimonials .container .card:hover i {
+  color: #fff;
+}
+
+.pricing {
+  margin: 180px 0;
+  text-align: center;
+}
+
+.pricing table {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.pricing table, tr, th, td {
+  padding: 20px 0;
+  color: #e74c3c;
+  font-size: 18px;
+  border: 1px solid #e74c3c;
+  border-collapse: collapse;
+  background: linear-gradient(to top, #3c3c3c 0%, #222222 100%);
+  background: -webkit-linear-gradient(to top, #3c3c3c 0%, #222222 100%);
+}
+
+.contact {
+  background: #fff;
+}
+
+.contact .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 180px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .container .contact-box {
+  width: 100%;
+  max-width: 720px;
+  height: 350px;
+  text-align: left;
+}
+
+.contact .container .contact-box:last-child {
+  max-width: 350px;
+}
+
+.contact .container h3 {
+  margin: 30px 0;
+  color: #e74c3c;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.contact .container p {
+  margin-top: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.contact .container h4 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.contact .container a {
+  margin: 20px 0;
+  padding: 16px;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 19px;
+  border-radius: 7px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact .container a:hover {
+  background: #3c3c3c;
+  color: #e74c3c;
+  transition: 0.7s;
+}
+
+.contact .container img {
+  width: 100%;
+  display: block;
+}
+
+footer .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .container .footer-card {
+  max-width: 450px;
+}
+
+footer .container i {
+  margin: 20px 0;
+  color: #e74c3c;
+  font-size: 60px;
+}
+
+footer .container h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+footer .container h3 {
+  margin: 10px 0;
+  color: #e74c3c;
+  font-size: 24px;
+}
+
+@media (max-width: 767.98px) {
+  nav .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero {
+    background-position: left;
+  }
+  .hero .container h1 {
+    margin: 80px 0;
+  }
+  .services .container {
+    flex-direction: column;
+  }
+  .services .container .service-box {
+    margin: 0 auto;
+  }
+  .services .container .service-box p {
+    margin: 4px 0;
+    font-size: 21px;
+  }
+  .services .container .service-box i {
+    font-size: 20px;
+  }
+  .testimonials .container {
+    padding: 0;
+  }
+  .testimonials .container .card:hover {
+    transform: none;
+  }
+  .pricing .clsScroll {
+    width: 100%;
+    max-width: 430px;
+    height: 400px;
+    margin: 0 auto;
+    background: yellow;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .pricing .clsScroll::-webkit-scrollbar {
+    background: #e74c3c;
+  }
+  .pricing .clsScroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #3c3c3c 0%, #222222 100%);
+    background: -webkit-linear-gradient(to top, #3c3c3c 0%, #222222 100%);
+    border-radius: 10px;
+  }
+  .pricing table, tr, th, td {
+    font-size: 12px;
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .contact-box {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .contact .container .contact-box:last-child {
+    margin: 40px 0 0 0;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container h2, footer .container h3, footer .container i {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1016px) {
+  .services .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .contact-box {
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1017px) and (max-width: 1410px) {
+  .services .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1475px) {
+  .pricing table {
+    width: 100%;
+    max-width: 700px;
+  }
+}
